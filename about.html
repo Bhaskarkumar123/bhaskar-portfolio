@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About | Bhaskar Kumar</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/about.css">
+    
+</head>
+
+<body>
+
+
+    <!-- Airplane SVG Definition -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <defs>
+            <symbol id="pl" viewBox="0 0 200 120">
+
+                <path d="M120 52 L80 6 L98 6 L156 52Z"
+                      style="fill:var(--v)"/>
+
+                <path d="M120 68 L80 114 L98 114 L156 68Z"
+                      style="fill:var(--v)"/>
+
+                <path d="M34 53 L12 30 L24 30 L52 53Z"
+                      style="fill:var(--v)"/>
+
+                <path d="M34 67 L12 90 L24 90 L52 67Z"
+                      style="fill:var(--v)"/>
+
+                <path d="M196 60
+                         C186 51 150 49 100 49
+                         L30 52 L10 58
+                         L10 62 L30 68
+                         L100 71
+                         C150 71 186 69 196 60Z"
+                      style="fill:var(--fg)"/>
+
+                <ellipse cx="168" cy="60" rx="14" ry="4.5"
+                         style="fill:var(--c)"/>
+
+                <rect x="100" y="22" width="18" height="7" rx="3"
+                      style="fill:var(--p)"/>
+
+                <rect x="100" y="91" width="18" height="7" rx="3"
+                      style="fill:var(--p)"/>
+
+            </symbol>
+        </defs>
+    </svg>
+
+        <!-- Flying Airplane -->
+    <div class="flyer" aria-hidden="true">
+
+        <div class="fin">
+
+            <div class="ban">
+                <span>Bhaskar portfolio</span>
+            </div>
+
+            <div class="rope"></div>
+
+            <div class="pw">
+
+                <div class="plane">
+
+                    <svg class="ly" viewBox="0 0 200 120"
+                         style="transform:translateZ(-12px);filter:brightness(.4)">
+                        <use href="#pl" width="200" height="120"></use>
+                    </svg>
+
+                    <svg class="ly" viewBox="0 0 200 120"
+                         style="transform:translateZ(-9px);filter:brightness(.5)">
+                        <use href="#pl" width="200" height="120"></use>
+                    </svg>
+
+                    <svg class="ly" viewBox="0 0 200 120"
+                         style="transform:translateZ(-6px);filter:brightness(.6)">
+                        <use href="#pl" width="200" height="120"></use>
+                    </svg>
+
+                    <svg class="ly" viewBox="0 0 200 120"
+                         style="transform:translateZ(-3px);filter:brightness(.8)">
+                        <use href="#pl" width="200" height="120"></use>
+                    </svg>
+
+                    <svg class="ly" viewBox="0 0 200 120">
+                        <use href="#pl" width="200" height="120"></use>
+                    </svg>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Same Background -->
+    <canvas id="bg"></canvas>
+    <div class="mouse-glow"></div>
+
+
+    <!-- Same Navbar -->
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">BK</a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="experience.html">Experience</a>
+           <!----- <button class="theme-toggle">☼</button> --->
+        </div>
+
+    </nav>
+
+
+    <main class="about-page">
+
+        <!-- PAGE TITLE -->
+        <header class="about-title reveal-top">
+            <p class="section-label">WHO I AM</p>
+            <h1>
+                BHASKAR<br>
+                <span>KUMAR</span>
+            </h1>
+        </header>
+
+
+        <!-- 1. ABOUT ME + PHOTO -->
+        <section class="about-row">
+
+            <div class="about-card glass-card reveal-top">
+
+                <p class="card-label">ABOUT ME</p>
+
+                <h2>
+                    Hi, I'm Bhaskar, a software developer who loves
+                    turning ideas and data into useful things.
+                </h2>
+
+                <div class="about-story">
+
+                    <p>
+                        I'm a software developer who enjoys working on
+                        computers. I like building things, solving problems,
+                        and seeing an idea turn into something people can
+                        actually use.
+                    </p>
+
+                    <p>
+                        I love learning new technology and sharing what I
+                        learn. For me, every new tool is a chance to get
+                        better at my craft. I enjoy the work that comes with
+                        understanding data, building websites, and helping
+                        businesses make smarter decisions.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="photo-card reveal-right">
+                <div class="photo-frame">
+                    <img src="images/contact.jpeg"
+                         alt="Bhaskar Kumar">
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- 2. PHOTO + EDUCATION -->
+        <section class="about-row reverse">
+
+            <div class="photo-card reveal-left">
+                <div class="photo-frame">
+
+                    <img src="images/BCO.png"
+                         alt="Bhaskar Kumar">
+
+                </div>
+            </div>
+
+
+            <div class="education-card glass-card reveal-top">
+
+                <p class="card-label">EDUCATION</p>
+
+                <h2>
+                    Building knowledge,
+                    one chapter at a time.
+                </h2>
+
+                <div class="education-content">
+
+                    <h3>Bachelor of Technology</h3>
+
+                    <p>
+                        Computer Science and Engineering
+                    </p>
+
+                    <span>
+                        Jodhpur Institute of Engineering and Technology, Rajasthan.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 3. WHAT I OFFER + PHOTO -->
+        <section class="about-row">
+
+            <div class="offer-card glass-card reveal-left">
+
+                <p class="card-label">WHAT I OFFER</p>
+
+                <h2>
+                    Turning ideas into
+                    useful digital solutions.
+                </h2>
+
+                <div class="offer-list">
+
+                    <div class="offer-item">
+                        <span>01</span>
+                        <strong>Web Development</strong>
+                    </div>
+
+                    <div class="offer-item">
+                        <span>02</span>
+                        <strong>Data Science</strong>
+                    </div>
+
+                    <div class="offer-item">
+                        <span>03</span>
+                        <strong>Machine Learning</strong>
+                    </div>
+
+                    <div class="offer-item">
+                        <span>04</span>
+                        <strong>AI Solutions</strong>
+                    </div>
+
+                    <div class="offer-item">
+                        <span>05</span>
+                        <strong>Software Development</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="photo-card reveal-right">
+
+                <div class="photo-frame">
+                    <img src="images/BCO1.png"
+                         alt="Bhaskar Kumar">
+                </div>
+
+            </div>
+
+        </section>
+        
+
+        <!-- 4. PHOTO + EXTRA ACTIVITIES -->
+        <section class="about-row reverse">
+
+            <div class="photo-card reveal-left">
+
+                <div class="photo-frame">
+                    <img src="images/BCO2.png"
+                         alt="Bhaskar Kumar">
+                </div>
+
+            </div>
+
+
+            <div class="activities-card glass-card reveal-right">
+
+                <p class="card-label">OUTSIDE OF WORK</p>
+
+                <h2>
+                    Curiosity doesn't stop
+                    when the screen does.
+                </h2>
+
+                <div class="activity-list">
+
+                    <div class="activity-item">
+                        <span>✦</span>
+                        <p>Playing cricket</p>
+                    </div>
+
+                    <div class="activity-item">
+                        <span>✦</span>
+                        <p>Learning new technologies</p>
+                    </div>
+
+                    <div class="activity-item">
+                        <span>✦</span>
+                        <p>Exploring new ideas</p>
+                    </div>
+
+                    <div class="activity-item">
+                        <span>✦</span>
+                        <p>Building personal projects</p>
+                    </div>
+
+                </div>
+
+                
+
+            </div>
+
+            
+
+        </section>
+
+        <!-- 4. WHAT DRIVE ME-- -->
+
+        <section class="drives-section reveal-top">
+
+            <div class="section-heading">
+                <p class="section-label">MY MINDSET</p>
+
+                <h2>
+                    WHAT <span>DRIVES ME</span>
+                </h2>
+
+                <p>
+                    The mindset I bring to every project, from the first idea
+                    to the final solution.
+                </p>
+            </div>
+
+            <div class="drives-flow">
+
+                <div class="drive-card reveal-left">
+                    <div class="drive-number">01</div>
+                    <div class="drive-icon">✦</div>
+                    <h3>CURIOUS</h3>
+                    <p>
+                        I enjoy discovering new ideas, technologies and
+                        better ways to solve problems.
+                    </p>
+                </div>
+
+                <div class="drive-arrow">→</div>
+
+                <div class="drive-card reveal-top">
+                    <div class="drive-number">02</div>
+                    <div class="drive-icon">⌁</div>
+                    <h3>BUILD</h3>
+                    <p>
+                        I turn ideas into practical projects and useful
+                        digital experiences.
+                    </p>
+                </div>
+
+                <div class="drive-arrow">→</div>
+
+                <div class="drive-card reveal-top">
+                    <div class="drive-number">03</div>
+                    <div class="drive-icon">◈</div>
+                    <h3>LEARN</h3>
+                    <p>
+                        Every project gives me an opportunity to learn
+                        something new and improve my skills.
+                    </p>
+                </div>
+
+                <div class="drive-arrow">→</div>
+
+                <div class="drive-card reveal-right">
+                    <div class="drive-number">04</div>
+                    <div class="drive-icon">↗</div>
+                    <h3>SOLVE</h3>
+                    <p>
+                        I focus on creating solutions that are useful,
+                        meaningful and easy to understand.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- MY APPROACH -->
+        <section class="approach-section reveal-top">
+
+            <div class="section-heading">
+                <p class="section-label">HOW I WORK</p>
+
+                <h2>
+                    MY <span>APPROACH</span>
+                </h2>
+
+                <p>
+                    A simple process I follow to turn ideas into practical,
+                    useful and better solutions.
+                </p>
+            </div>
+
+            <div class="approach-flow">
+
+                <div class="approach-card reveal-left">
+                    <span class="approach-number">01</span>
+
+                    <div class="approach-icon">⌕</div>
+
+                    <h3>UNDERSTAND</h3>
+
+                    <p>
+                        First, I understand the problem, requirements and
+                        goals before starting the work.
+                    </p>
+                </div>
+
+                <div class="approach-line">→</div>
+
+                <div class="approach-card reveal-top">
+                    <span class="approach-number">02</span>
+
+                    <div class="approach-icon">◈</div>
+
+                    <h3>EXPLORE</h3>
+
+                    <p>
+                        I explore ideas, technologies, data and different
+                        approaches to find the right direction.
+                    </p>
+                </div>
+
+                <div class="approach-line">→</div>
+
+                <div class="approach-card reveal-top">
+                    <span class="approach-number">03</span>
+
+                    <div class="approach-icon">✦</div>
+
+                    <h3>BUILD</h3>
+
+                    <p>
+                        I turn the selected idea into a working product
+                        through development, testing and iteration.
+                    </p>
+                </div>
+
+                <div class="approach-line">→</div>
+
+                <div class="approach-card reveal-right">
+                    <span class="approach-number">04</span>
+
+                    <div class="approach-icon">↗</div>
+
+                    <h3>IMPROVE</h3>
+
+                    <p>
+                        I review the result, learn from it and continuously
+                        improve the final solution.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- 5. UNIQUE VALUE PROPOSITION -->
+        <section class="uvp-section">
+
+            <div class="uvp-card reveal-top">
+
+                <div class="uvp-content">
+
+                    <p class="card-label">MY UNIQUE VALUE</p>
+
+                    <h2>
+                        DATA
+                        <span>→</span>
+                        AI
+                        <span>→</span>
+                        SOFTWARE
+                    </h2>
+
+                    <p class="uvp-description">
+                        Bringing data to life: I analyze raw data to uncover actionable insights
+                        and transform them into seamless digital products through fast, 
+                        responsive web interfaces.
+                    </p>
+
+                </div>
+
+
+                <div class="uvp-flow" aria-hidden="true">
+
+                    <div class="flow-node">
+                        <span>01</span>
+                        <strong>DATA</strong>
+                    </div>
+
+                    <div class="flow-line"></div>
+
+                    <div class="flow-node">
+                        <span>02</span>
+                        <strong>AI</strong>
+                    </div>
+
+                    <div class="flow-line"></div>
+
+                    <div class="flow-node">
+                        <span>03</span>
+                        <strong>SOFTWARE</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <a href="images/Bhaskar_DS_Resume.pdf"
+                class="resume-btn"
+                download>
+                    Download Resume
+                    <span>↗</span>
+                </a>
+
+        </section>
+
+    </main>
+
+     <!-- FOOTER SECTION -->
+    <footer class="site-footer">
+
+    <div class="footer-glow"></div>
+
+    <div class="footer-main">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+
+            <h2>
+                Let's build something
+                <span>intelligent.</span>
+            </h2>
+
+            <p>
+                Turning ideas, data and technology into
+                useful digital experiences.
+            </p>
+
+        </div>
+
+
+        <!-- Navigation -->
+        <div class="footer-column">
+
+            <h3>Explore</h3>
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="experience.html">Experience</a>
+
+        </div>
+
+
+        <!-- Connect -->
+        <div class="footer-column">
+
+            <h3>Connect</h3>
+
+            <a href="mailto:bhaskarkumar7673@gmail.com">
+                Email
+            </a>
+
+            <a href="https://github.com/Bhaskarkumar123" target="_blank">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/bhaskar-kumar-37b257291" target="_blank">
+                LinkedIn
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- BIG CTA -->
+
+    <div class="footer-cta">
+
+        <p>HAVE AN IDEA?</p>
+
+        <a href="mailto:bhaskarkumar7673@gmail.com">
+            LET'S TALK
+            <span>↗</span>
+        </a>
+
+    </div>
+
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Bhaskar Kumar.
+            <span>Built with curiosity & code.</span>
+        </p>
+
+        <a href="#" class="back-top">
+            Back to top
+            <span>↑</span>
+        </a>
+
+    </div>
+
+</footer>
+
+
+    <script src="js/background.js"></script>
+    <script src="js/about.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projects | Bhaskar Kumar</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Unbounded:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="css/global.css">
+
+    <!-- Projects CSS -->
+    <link rel="stylesheet" href="css/projects.css">
+</head>
+
+<body>
+
+
+    <!-- Airplane SVG Definition -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <defs>
+            <symbol id="pl" viewBox="0 0 200 120">
+
+                <path d="M120 52 L80 6 L98 6 L156 52Z"
+                      style="fill:var(--v)"/>
+
+                <path d="M120 68 L80 114 L98 114 L156 68Z"
+                      style="fill:var(--v)"/>
+
+                <path d="M34 53 L12 30 L24 30 L52 53Z"
+                      style="fill:var(--v)"/>
+
+                <path d="M34 67 L12 90 L24 90 L52 67Z"
+                      style="fill:var(--v)"/>
+
+                <path d="M196 60
+                         C186 51 150 49 100 49
+                         L30 52 L10 58
+                         L10 62 L30 68
+                         L100 71
+                         C150 71 186 69 196 60Z"
+                      style="fill:var(--fg)"/>
+
+                <ellipse cx="168" cy="60" rx="14" ry="4.5"
+                         style="fill:var(--c)"/>
+
+                <rect x="100" y="22" width="18" height="7" rx="3"
+                      style="fill:var(--p)"/>
+
+                <rect x="100" y="91" width="18" height="7" rx="3"
+                      style="fill:var(--p)"/>
+
+            </symbol>
+        </defs>
+    </svg>
+
+        <!-- Flying Airplane -->
+    <div class="flyer" aria-hidden="true">
+
+        <div class="fin">
+
+            <div class="ban">
+                <span>Bhaskar portfolio</span>
+            </div>
+
+            <div class="rope"></div>
+
+            <div class="pw">
+
+                <div class="plane">
+
+                    <svg class="ly" viewBox="0 0 200 120"
+                         style="transform:translateZ(-12px);filter:brightness(.4)">
+                        <use href="#pl" width="200" height="120"></use>
+                    </svg>
+
+                    <svg class="ly" viewBox="0 0 200 120"
+                         style="transform:translateZ(-9px);filter:brightness(.5)">
+                        <use href="#pl" width="200" height="120"></use>
+                    </svg>
+
+                    <svg class="ly" viewBox="0 0 200 120"
+                         style="transform:translateZ(-6px);filter:brightness(.6)">
+                        <use href="#pl" width="200" height="120"></use>
+                    </svg>
+
+                    <svg class="ly" viewBox="0 0 200 120"
+                         style="transform:translateZ(-3px);filter:brightness(.8)">
+                        <use href="#pl" width="200" height="120"></use>
+                    </svg>
+
+                    <svg class="ly" viewBox="0 0 200 120">
+                        <use href="#pl" width="200" height="120"></use>
+                    </svg>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+     
+
+
+    <!-- Background -->
+    <canvas id="bg"></canvas>
+    <div class="mouse-glow"></div>
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">BK</a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="experience.html">Experience</a>
+        </div>
+
+    </nav>
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main>
+
+        <!-- Projects Hero -->
+
+        <section class="projects-hero">
+
+            <div class="section-heading projects-heading">
+
+                <p class="section-label">
+                    SELECTED WORK
+                </p>
+
+                <h1>
+                    WORK THAT
+                    <span>DOES MORE</span>
+                </h1>
+
+                <p>
+                    Real-world projects where data, AI and
+                    software come together to solve practical
+                    problems.
+                </p>
+
+            </div>
+
+
+            <!-- Project Filters -->
+
+            <div class="project-filters">
+
+                <button class="filter-btn active" data-filter="all">
+                    ALL
+                </button>
+
+                <button class="filter-btn" data-filter="ai">
+                    AI
+                </button>
+
+                <button class="filter-btn" data-filter="ml">
+                    MACHINE LEARNING
+                </button>
+
+                <button class="filter-btn" data-filter="data">
+                    DATA
+                </button>
+
+                <button class="filter-btn" data-filter="web">
+                    WEB
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             FEATURED PROJECT
+        ====================================================== -->
+
+        <section class="projects-container">
+
+            <article class="project-card featured-project"
+                     data-category="ai web data">
+
+                     <div class="image-overlay">
+                        <span>FEATURED PROJECT</span>
+                    </div>
+
+                <div class="project-image">
+
+                    <img
+                        src="images/smart-farmer.png"
+                        alt="Smart Farmer Assistant project"
+                    >
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <div class="project-meta">
+
+                        <span class="project-number">
+                            01
+                        </span>
+
+                        <span class="project-type">
+                            AI · WEB · DATA
+                        </span>
+
+                    </div>
+
+
+                    <h2>
+                        Smart Farmer Assistant
+                    </h2>
+
+
+                    <p class="project-description">
+                        AI-powered tools designed to provide
+                        useful farming assistance through
+                        data-driven features and weather
+                        information.
+                    </p>
+
+
+                    <div class="project-tech">
+
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>MySQL</span>
+                        <span>OpenWeather API</span>
+
+                    </div>
+
+
+                    <div class="project-actions">
+
+                        <a href="projects/smart-farmer.html" class="btn primary">
+                            View Project ↗
+                        </a>
+
+                        <a href="https://github.com/Bhaskarkumar123/Smart-farmer-assistant" class="btn">
+                            GitHub ↗
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+                 PROJECT GRID
+            ================================================== -->
+
+            <div class="project-grid">
+
+
+                <!-- Customer Churn prediction -->
+
+                <article class="project-card"
+                         data-category="ml data">
+
+                         <div class="image-overlay">
+                            <span>MACHINE LEARNING</span>
+                        </div>
+
+                    <div class="project-image">
+
+                        <img
+                            src="images/netflix.webp"
+                            alt="Netflix Rating Prediction project"
+                        >
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <div class="project-meta">
+
+                            <span class="project-number">
+                                02
+                            </span>
+
+                            <span class="project-type">
+                                ML · DATA
+                            </span>
+
+                        </div>
+
+
+                        <h2>
+                            Customer Churn Prediction
+                        </h2>
+
+
+                        <p class="project-description">
+                            This project focuses on predicting whether
+                             a customer will discontinue using a company’s
+                              services based on historical data. The goal 
+                              is to help businesses proactively retain 
+                              customers by identifying churn risks early.
+                        </p>
+
+
+                        <div class="project-tech">
+
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Scikit-learn</span>
+                            <span>CNN</span>
+
+                        </div>
+
+
+                        <div class="project-actions">
+
+                            <a href="projects/netflix-prediction.html" class="btn primary">
+                                View Project ↗
+                            </a>
+
+                            <a href="https://github.com/Bhaskarkumar123/Customer-Churn-Prediction-and-Analysis-Using-Machine-Learning" 
+                                class="btn">
+                                GitHub ↗
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Knowledge Assistant -->
+
+                <article class="project-card"
+                         data-category="ai web">
+
+                         <div class="image-overlay">
+                            <span>AI · RAG</span>
+                        </div>
+
+                    <div class="project-image">
+
+                        <img
+                            src="images/enterprice.jpeg"
+                            alt="Enterprise Knowledge Assistant project"
+                        >
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <div class="project-meta">
+
+                            <span class="project-number">
+                                03
+                            </span>
+
+                            <span class="project-type">
+                                AI · WEB
+                            </span>
+
+                        </div>
+
+
+                        <h2>
+                            Enterprise Knowledge Assistant
+                        </h2>
+
+
+                        <p class="project-description">
+                            An intelligent knowledge-assistance
+                            interface designed around document
+                            retrieval and AI-powered interaction.
+                        </p>
+
+
+                        <div class="project-tech">
+
+                            <span>React</span>
+                            <span>AI</span>
+                            <span>RAG</span>
+                            <span>UI/UX</span>
+
+                        </div>
+
+
+                        <div class="project-actions">
+
+                            <a href="projects/knowledge-assistant.html" class="btn primary">
+                                View Project ↗
+                            </a>
+
+                            <a href="https://github.com/Bhaskarkumar123/AI-Powered-Document-Assistant" class="btn">
+                                GitHub ↗
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section class="build-around">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    WHAT I BUILD AROUND
+                </p>
+
+                <h2>
+                    IDEAS INTO
+                    <span>USEFUL SYSTEMS.</span>
+                </h2>
+
+                <p>
+                    A mix of software development, data, machine learning
+                    and AI-driven experiences.
+                </p>
+
+            </div>
+
+
+            <div class="build-tags">
+
+                <span>AI SYSTEMS</span>
+                <span>DATA PRODUCTS</span>
+                <span>MACHINE LEARNING</span>
+                <span>WEB EXPERIENCES</span>
+                <span>INTELLIGENT TOOLS</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- GitHub CTA -->
+
+        <section class="projects-cta">
+
+            <p class="section-label">
+                MORE ON GITHUB
+            </p>
+
+            <h2>
+                BUILDING,
+                <span>LEARNING & EXPLORING.</span>
+            </h2>
+
+            <p>
+                More experiments, ideas and projects are
+                available in my development journey.
+            </p>
+
+            <a href="#" class="btn primary">
+                Explore GitHub ↗
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <h2>
+                    Let's build something
+                    <span>intelligent.</span>
+                </h2>
+
+                <p>
+                    Turning ideas, data and technology into
+                    useful digital experiences.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Explore</h3>
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="skills.html">Skills</a>
+                <a href="experience.html">Experience</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Connect</h3>
+
+                <a href="mailto:bhaskarkumar7673@gmail.com">
+                    Email
+                </a>
+
+                <a href="https://github.com/Bhaskarkumar123" 
+                target="_blank">
+                    GitHub
+                </a>
+
+                <a href="https://www.linkedin.com/in/bhaskar-kumar-37b257291" target="_blank">
+                    LinkedIn
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Bhaskar Kumar.
+                <span>Built with curiosity & code.</span>
+            </p>
+
+            <a href="#" class="back-top">
+                Back to top ↑
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Background JS -->
+    <script src="js/background.js"></script>
+    <script src="js/projects.js"></script>
+
+</body>
+
+</html>

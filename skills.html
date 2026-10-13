@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Skills | Bhaskar Kumar</title>
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="css/global.css">
+
+    <!-- Skills CSS -->
+    <link rel="stylesheet" href="css/skills.css">
+</head>
+
+<body>
+
+    <!-- Airplane SVG Definition -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <defs>
+            <symbol id="pl" viewBox="0 0 200 120">
+
+                <path d="M120 52 L80 6 L98 6 L156 52Z"
+                      style="fill:var(--v)"/>
+
+                <path d="M120 68 L80 114 L98 114 L156 68Z"
+                      style="fill:var(--v)"/>
+
+                <path d="M34 53 L12 30 L24 30 L52 53Z"
+                      style="fill:var(--v)"/>
+
+                <path d="M34 67 L12 90 L24 90 L52 67Z"
+                      style="fill:var(--v)"/>
+
+                <path d="M196 60
+                         C186 51 150 49 100 49
+                         L30 52 L10 58
+                         L10 62 L30 68
+                         L100 71
+                         C150 71 186 69 196 60Z"
+                      style="fill:var(--fg)"/>
+
+                <ellipse cx="168" cy="60" rx="14" ry="4.5"
+                         style="fill:var(--c)"/>
+
+                <rect x="100" y="22" width="18" height="7" rx="3"
+                      style="fill:var(--p)"/>
+
+                <rect x="100" y="91" width="18" height="7" rx="3"
+                      style="fill:var(--p)"/>
+
+            </symbol>
+        </defs>
+    </svg>
+
+        <!-- Flying Airplane -->
+    <div class="flyer" aria-hidden="true">
+
+        <div class="fin">
+
+            <div class="ban">
+                <span>Bhaskar portfolio</span>
+            </div>
+
+            <div class="rope"></div>
+
+            <div class="pw">
+
+                <div class="plane">
+
+                    <svg class="ly" viewBox="0 0 200 120"
+                         style="transform:translateZ(-12px);filter:brightness(.4)">
+                        <use href="#pl" width="200" height="120"></use>
+                    </svg>
+
+                    <svg class="ly" viewBox="0 0 200 120"
+                         style="transform:translateZ(-9px);filter:brightness(.5)">
+                        <use href="#pl" width="200" height="120"></use>
+                    </svg>
+
+                    <svg class="ly" viewBox="0 0 200 120"
+                         style="transform:translateZ(-6px);filter:brightness(.6)">
+                        <use href="#pl" width="200" height="120"></use>
+                    </svg>
+
+                    <svg class="ly" viewBox="0 0 200 120"
+                         style="transform:translateZ(-3px);filter:brightness(.8)">
+                        <use href="#pl" width="200" height="120"></use>
+                    </svg>
+
+                    <svg class="ly" viewBox="0 0 200 120">
+                        <use href="#pl" width="200" height="120"></use>
+                    </svg>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Background -->
+    <canvas id="bg"></canvas>
+    <div class="mouse-glow"></div>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">BK</a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html" class="active">Skills</a>
+            <a href="experience.html">Experience</a>
+
+           <!----- <button class="theme-toggle" id="themeToggle">☼</button> --->
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         SKILLS PAGE
+    ========================== -->
+    <main class="skills-page">
+
+
+        <!-- HERO -->
+        <section class="skills-hero">
+
+            <p class="section-label">MY TOOLKIT</p>
+
+            <h1>
+                THE TOOLS BEHIND
+                <span>THE IDEAS</span>
+            </h1>
+
+            <p class="skills-intro">
+                Technologies I use to analyze data, build intelligent systems
+                and create useful digital experiences.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             PROGRAMMING
+        ========================== -->
+        <section class="skill-category">
+
+            <div class="category-heading">
+                <p class="category-number">01</p>
+
+                <h2>PROGRAMMING</h2>
+
+                <p>
+                    Languages I use to build logic, applications and
+                    data-driven solutions.
+                </p>
+            </div>
+
+
+            <div class="skills-grid">
+
+                <!-- Python -->
+                <div class="skill-card reveal-top">
+
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <rect x="6" y="6" width="24" height="20" rx="8" fill="#3b82c4"/>
+                            <rect x="18" y="22" width="24" height="20" rx="8" fill="#ffd43b"/>
+                            <circle cx="14" cy="13" r="2.2" fill="#fff"/>
+                            <circle cx="34" cy="35" r="2.2" fill="#fff"/>
+                        </svg>
+                        
+                    </div>
+                    <h3>Python</h3>
+
+                </div>
+
+
+                <!-- Java -->
+                <div class="skill-card reveal-left">
+
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <path d="M18 8c-3 3 3 5 0 8M26 5c-3 3 3 5 0 8" fill="none" stroke="#e76f00" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M10 22h24v6a10 10 0 0 1-10 10h-4a10 10 0 0 1-10-10z" fill="#5382a1"/>
+                            <path d="M34 24h3a4 4 0 0 1 0 8h-4" fill="none" stroke="#5382a1" stroke-width="3" stroke-linecap="round"/>
+                            <path d="M8 43h28" stroke="#e76f00" stroke-width="3" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+
+                    <h3>Java</h3>
+
+                </div>
+
+
+                <!-- SQL -->
+                <div class="skill-card reveal-right">
+
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <path d="M10 12v24c0 3 6 6 14 6s14-3 14-6V12z" fill="#1971c2"/>
+                            <ellipse cx="24" cy="12" rx="14" ry="6" fill="#4dabf7"/>
+                            <path d="M10 20c0 3 6 6 14 6s14-3 14-6M10 28c0 3 6 6 14 6s14-3 14-6" fill="none" stroke="#a5d8ff" stroke-width="2"/>
+                        </svg>
+                    </div>
+
+                    <h3>SQL</h3>
+
+                </div>
+
+
+                <!-- JavaScript -->
+                <div class="skill-card reveal-bottom">
+
+                    <div class="skill-icon" aria-hidden="true">
+                        <svg viewBox="0 0 48 48">
+                            <rect x="4" y="4" width="40" height="40" rx="6" fill="#f7df1e"/>
+                            <text x="40" y="39" text-anchor="end" font-family="Arial,sans-serif" font-weight="700" font-size="20" fill="#222">JS</text>
+                        </svg>
+                    </div>
+
+                    <h3>JavaScript</h3>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             DATA SCIENCE
+        ========================== -->
+        <section class="skill-category">
+
+            <div class="category-heading">
+                <p class="category-number">02</p>
+
+                <h2>DATA SCIENCE</h2>
+
+                <p>
+                    Tools I use to explore data, visualize patterns and
+                    extract useful insights.
+                </p>
+            </div>
+
+
+            <div class="skills-grid">
+
+                <!-- Pandas -->
+                <div class="skill-card reveal-left">
+
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <rect x="9" y="12" width="7" height="26" rx="2" fill="#150458"/>
+                            <rect x="20.5" y="4" width="7" height="40" rx="2" fill="#ffca00"/>
+                            <rect x="32" y="16" width="7" height="26" rx="2" fill="#e70488"/>
+                            <rect x="9" y="6" width="7" height="4" rx="1" fill="#150458"/>
+                            <rect x="32" y="9" width="7" height="4" rx="1" fill="#e70488"/>
+                        </svg>
+                    </div>
+
+                    <h3>Pandas</h3>
+
+                </div>
+
+
+                <!-- NumPy -->
+                <div class="skill-card reveal-top">
+
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <path d="M24 5l16 9-16 9-16-9z" fill="#a5d8ff"/>
+                            <path d="M8 14l16 9v20L8 34z" fill="#4dabf7"/>
+                            <path d="M40 14L24 23v20l16-9z" fill="#1971c2"/>
+                        </svg>
+                    </div>
+
+                    <h3>NumPy</h3>
+
+                </div>
+
+
+                <!-- Matplotlib -->
+                <div class="skill-card reveal-bottom">
+
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <circle cx="24" cy="24" r="19" fill="#fff" stroke="#11557c" stroke-width="3"/>
+                            <path d="M24 24V8a16 16 0 0 1 16 16z" fill="#f4793b"/>
+                            <path d="M24 24h16a16 16 0 0 1-16 16z" fill="#1f77b4"/>
+                            <path d="M24 24v16A16 16 0 0 1 8 24z" fill="#2ca02c"/>
+                            <path d="M24 24H8A16 16 0 0 1 24 8z" fill="#d62728"/>
+                        </svg>
+                    </div>
+
+                    <h3>Matplotlib</h3>
+
+                </div>
+
+
+                <!-- Power BI -->
+                <div class="skill-card reveal-right">
+
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <rect x="8" y="26" width="9" height="16" rx="2" fill="#f2c811"/>
+                            <rect x="20" y="16" width="9" height="26" rx="2" fill="#e8a300"/>
+                            <rect x="32" y="6" width="9" height="36" rx="2" fill="#f2c811"/>
+                        </svg>
+                    </div>
+
+                    <h3>Power BI</h3>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================
+             MACHINE LEARNING & AI
+        ========================== -->
+        <section class="skill-category">
+
+            <div class="category-heading">
+                <p class="category-number">03</p>
+
+                <h2>MACHINE LEARNING & AI</h2>
+
+                <p>
+                    Frameworks I use to turn data into intelligent
+                     systems that can see, understand and respond.
+                </p>
+            </div>
+
+
+            <div class="skills-grid">
+
+                <!-- scikit-learn -->
+                <div class="skill-card reveal-left">
+
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <circle cx="18" cy="24" r="14" fill="#f7931e"/>
+                            <circle cx="30" cy="24" r="14" fill="#29abe2" fill-opacity=".85"/>
+                            <circle cx="24" cy="24" r="3" fill="#fff"/>
+                        </svg>
+                    </div>
+
+                    <h3>scikit-learn</h3>
+
+                </div>
+
+
+                <!-- TensorFlow -->
+                <div class="skill-card reveal-top">
+
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <path d="M6 8h36v9H29v27h-10V17H6z" fill="#ff6f00"/>
+                            <path d="M29 17h13V8H29z" fill="#ffa726"/>
+                        </svg>
+                    </div>
+
+                    <h3>TensorFlow</h3>
+
+                </div>
+
+
+                <!-- OpenCV -->
+                <div class="skill-card reveal-bottom">
+
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <g fill="none" stroke-width="7">
+                                <circle cx="24" cy="14" r="8" stroke="#e53935"/>
+                                <circle cx="14" cy="32" r="8" stroke="#43a047"/>
+                                <circle cx="34" cy="32" r="8" stroke="#1e88e5"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <h3>OpenCV</h3>
+
+                </div>
+
+
+                <!-- Keras -->
+                <div class="skill-card reveal-right">
+
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <rect x="4" y="4" width="40" height="40" rx="8" fill="#d00000"/>
+                            <path d="M16 12v24M16 25l14-13M20 24l12 12" stroke="#fff" stroke-width="4" stroke-linecap="round" fill="none"/>
+                        </svg>
+                    </div>
+
+                    <h3>Keras</h3>
+
+                </div>
+
+                <!-- RAG -->
+                <div class="skill-card reveal-right">
+
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <rect x="6" y="6" width="20" height="26" rx="3" fill="#74c0fc"/>
+                            <path d="M11 13h10M11 19h10M11 25h6" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="31" cy="31" r="8" fill="#fff" fill-opacity=".1" stroke="#845ef7" stroke-width="3.5"/>
+                            <path d="M37 37l7 7" stroke="#845ef7" stroke-width="3.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+
+                    <h3>RAG</h3>
+
+                </div>
+
+                <!-- LLM -->
+                <div class="skill-card reveal-right">
+
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <path d="M8 10a4 4 0 0 1 4-4h24a4 4 0 0 1 4 4v18a4 4 0 0 1-4 4H22l-8 8v-8h-2a4 4 0 0 1-4-4z" fill="#845ef7"/>
+                            <path d="M24 11l2.5 6.5L33 20l-6.5 2.5L24 29l-2.5-6.5L15 20l6.5-2.5z" fill="#fff"/>
+                        </svg>
+                    </div>
+
+                    <h3>LLM</h3>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================
+             WEB DEVELOPMENT
+        ========================== -->
+        <section class="skill-category">
+
+            <div class="category-heading">
+                <p class="category-number">04</p>
+
+                <h2>WEB DEVELOPMENT</h2>
+
+                <p>
+                   Technologies I use to bring ideas to life as clean,
+                    interactive experiences on every screen.
+                </p>
+            </div>
+
+
+            <div class="skills-grid">
+
+                <!-- HTML5 -->
+                <div class="skill-card reveal-left">
+
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <path d="M7 5h34l-3 33-14 5-14-5z" fill="#e44d26"/>
+                            <path d="M24 8v32l11-3.5L37.7 8z" fill="#f16529"/>
+                            <text x="24" y="31" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="20" fill="#fff">5</text>
+                        </svg>
+                    </div>
+
+                    <h3>HTML5</h3>
+
+                </div>
+
+
+                <!-- CSS -->
+                <div class="skill-card reveal-top">
+
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <path d="M7 5h34l-3 33-14 5-14-5z" fill="#1572b6"/>
+                            <path d="M24 8v32l11-3.5L37.7 8z" fill="#33a9dc"/>
+                            <text x="24" y="31" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="20" fill="#fff">3</text>
+                        </svg>
+                    </div>
+
+                    <h3>CSS</h3>
+
+                </div>
+
+
+                <!-- React -->
+                <div class="skill-card reveal-bottom">
+
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <g fill="none" stroke="#61dafb" stroke-width="2.5">
+                                <ellipse cx="24" cy="24" rx="19" ry="7.5"/>
+                                <ellipse cx="24" cy="24" rx="19" ry="7.5" transform="rotate(60 24 24)"/>
+                                <ellipse cx="24" cy="24" rx="19" ry="7.5" transform="rotate(120 24 24)"/></g>
+                                <circle cx="24" cy="24" r="3.5" fill="#61dafb"/>
+                            </svg>
+                    </div>
+
+                    <h3>React</h3>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================
+             DATABASE
+        ========================== -->
+        <section class="skill-category">
+
+            <div class="category-heading">
+                <p class="category-number">05</p>
+
+                <h2>DATABASE</h2>
+
+                <p>
+                    Systems I use to keep data structured,searchable
+                     and ready to power smart applications
+                </p>
+            </div>
+
+
+            <div class="skills-grid">
+
+                <!-- Mysql -->
+                <div class="skill-card reveal-left">
+
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <path d="M10 12v24c0 3 6 6 14 6s14-3 14-6V12z" fill="#00758f"/>
+                            <ellipse cx="24" cy="12" rx="14" ry="6" fill="#4aa9c2"/>
+                            <path d="M10 24c0 3 6 6 14 6s14-3 14-6" fill="none" stroke="#f29111" stroke-width="3"/>
+                        </svg>
+                    </div>
+
+                    <h3>MySQL</h3>
+
+                </div>
+
+
+                <!-- MongoDB -->
+                <div class="skill-card reveal-top">
+
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <path d="M24 3c6 8 10 14 10 22 0 7-4 12-9 14v6h-2v-6c-5-2-9-7-9-14 0-8 4-14 10-22z" fill="#47a248"/>
+                            <path d="M24 8v34" stroke="#b8e5b0" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+
+                    <h3>MongoDB</h3>
+
+                </div>
+
+
+                <!-- ChromaDB -->
+                <div class="skill-card reveal-bottom">
+
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <circle cx="24" cy="16" r="11" fill="#ffde2d"/>
+                            <circle cx="16" cy="30" r="11" fill="#ff6446" fill-opacity=".9"/>
+                            <circle cx="32" cy="30" r="11" fill="#327eff" fill-opacity=".85"/>
+                        </svg>
+                    </div>
+
+                    <h3>ChromaDB</h3>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================
+             Tools
+        ========================== -->
+        <section class="skill-category">
+
+            <div class="category-heading">
+                <p class="category-number">06</p>
+
+                <h2>TOOLS</h2>
+
+                <p>
+                    Tools I use to write, test, track and share my work
+                     smoothly from idea to launch
+                </p>
+            </div>
+
+
+            <div class="skills-grid">
+
+                <!-- VS Code -->
+                <div class="skill-card reveal-left">
+
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <path d="M34 4l10 5v30l-10 5-20-18z" fill="#1f9cf0"/>
+                            <path d="M34 14v20L21 24z" fill="#0065a9"/>
+                            <path d="M4 18l4-2 9 8-9 8-4-2z" fill="#0078d4"/>
+                        </svg>
+                    </div>
+
+                    <h3>VS Code</h3>
+
+                </div>
+
+
+                <!-- Jupyter Notebook -->
+                <div class="skill-card reveal-top">
+
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <path d="M9 17c4-4 10-6 15-6s11 2 15 6c-4-2-9-3-15-3s-11 1-15 3z" fill="#f37726"/>
+                            <path d="M9 31c4 4 10 6 15 6s11-2 15-6c-4 2-9 3-15 3s-11-1-15-3z" fill="#f37726"/>
+                            <circle cx="24" cy="24" r="7" fill="#767677"/>
+                            <circle cx="38" cy="8" r="2.5" fill="#767677"/>
+                            <circle cx="11" cy="40" r="2" fill="#989798"/>
+                            <circle cx="10" cy="9" r="2" fill="#6f6f6f"/>
+                        </svg>
+                    </div>
+
+                    <h3>Jupyter Notebook</h3>
+
+                </div>
+
+                <!-- Excel -->
+                <div class="skill-card reveal-top">
+
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <rect x="4" y="4" width="40" height="40" rx="6" fill="#1d6f42"/>
+                            <path d="M15 14l18 20M33 14L15 34" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+
+                    <h3>Excel</h3>
+
+                </div>
+
+                <!-- Git -->
+                <div class="skill-card reveal-top">
+
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <path d="M24 3l21 21-21 21L3 24z" fill="#f05033"/>
+                            <g fill="#fff" stroke="#fff" stroke-width="3" stroke-linecap="round">
+                                <path d="M20 18v12M20 27l9-9" fill="none"/>
+                                <circle cx="20" cy="15" r="3.5"/>
+                                <circle cx="20" cy="33" r="3.5"/>
+                                <circle cx="29" cy="18" r="3.5"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <h3>Git</h3>
+
+                </div>
+
+                <!-- GitHub -->
+                <div class="skill-card reveal-top">
+
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <circle cx="24" cy="24" r="21" fill="#24292f"/>
+                            <circle cx="24" cy="27" r="11" fill="#fff"/>
+                            <path d="M14 21l-1-11 8 5zM34 21l1-11-8 5z" fill="#fff"/>
+                            <circle cx="20" cy="26" r="2" fill="#24292f"/>
+                            <circle cx="28" cy="26" r="2" fill="#24292f"/>
+                        </svg>
+                    </div>
+
+                    <h3>GitHub</h3>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================
+              AI-ASSISTED DEVELOPMENT
+         ========================== -->
+        <section class="ai-assisted-section">
+
+            <div class="section-heading">
+                <p class="section-label">HOW I WORK</p>
+
+                <h2>
+                    AI-ASSISTED
+                    <span>DEVELOPMENT</span>
+                </h2>
+
+                <p>
+                    I use AI as a productivity partner to explore technologies,
+                    understand problems, learn faster and build practical solutions.
+                </p>
+            </div>
+
+
+            <div class="ai-flow">
+
+                <div class="ai-step reveal-left">
+                    <span>01</span>
+                    <div class="ai-step-icon">◈</div>
+                    <h3>EXPLORE</h3>
+                    <p>
+                        Discover new technologies, concepts and possible approaches.
+                    </p>
+                </div>
+
+
+                <div class="ai-arrow">→</div>
+
+
+                <div class="ai-step reveal-top">
+                    <span>02</span>
+                    <div class="ai-step-icon">⌁</div>
+                    <h3>LEARN</h3>
+                    <p>
+                        Understand tools, documentation and technical concepts.
+                    </p>
+                </div>
+
+
+                <div class="ai-arrow">→</div>
+
+
+                <div class="ai-step reveal-bottom">
+                    <span>03</span>
+                    <div class="ai-step-icon">◇</div>
+                    <h3>BUILD</h3>
+                    <p>
+                        Turn ideas into working features and practical applications.
+                    </p>
+                </div>
+
+
+                <div class="ai-arrow">→</div>
+
+
+                <div class="ai-step reveal-right">
+                    <span>04</span>
+                    <div class="ai-step-icon">✦</div>
+                    <h3>IMPROVE</h3>
+                    <p>
+                        Test, refine and improve the final solution.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================
+              CURRENTLY EXPLORING
+         ========================== -->
+        <section class="exploring-section">
+
+            <div class="section-heading">
+                <p class="section-label">WHAT'S NEXT</p>
+
+                <h2>
+                    CURRENTLY
+                    <span>EXPLORING</span>
+                </h2>
+
+                <p>
+                    Technology never stays still. These are some of the areas
+                    I'm currently learning and experimenting with.
+                </p>
+            </div>
+
+
+            <div class="exploring-grid">
+
+                <div class="explore-card reveal-left">
+                    <span class="explore-number">01</span>
+
+                    <h3>AI ENGINEERING</h3>
+
+                    <p>
+                        Building practical AI-powered applications and intelligent
+                        software experiences.
+                    </p>
+
+                    <div class="explore-tag">AI</div>
+                </div>
+
+
+                <div class="explore-card reveal-top">
+                    <span class="explore-number">02</span>
+
+                    <h3>RAG SYSTEMS</h3>
+
+                    <p>
+                        Exploring retrieval-based systems that connect AI models
+                        with useful knowledge.
+                    </p>
+
+                    <div class="explore-tag">RAG</div>
+                </div>
+
+
+                <div class="explore-card reveal-bottom">
+                    <span class="explore-number">03</span>
+
+                    <h3>GENERATIVE AI</h3>
+
+                    <p>
+                        Learning how generative models can be used to create
+                        useful and intelligent solutions.
+                    </p>
+
+                    <div class="explore-tag">GEN AI</div>
+                </div>
+
+
+                <div class="explore-card reveal-right">
+                    <span class="explore-number">04</span>
+
+                    <h3>LLM APPLICATIONS</h3>
+
+                    <p>
+                        Exploring applications built around large language models
+                        and conversational interfaces.
+                    </p>
+
+                    <div class="explore-tag">LLM</div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================
+          SKILLS CTA
+         ========================== -->
+        <section class="skills-cta">
+
+            <div class="skills-cta-content">
+
+                <p class="section-label">THE REAL PROOF</p>
+
+                <h2>
+                    SKILLS ARE TOOLS
+                    <span>PROJECTS ARE THE PROOF</span>
+                </h2>
+
+                <p>
+                    I believe the best way to understand technology is to build
+                    something useful with it.
+                </p>
+
+                <a href="projects.html" class="skills-cta-button">
+                    EXPLORE MY PROJECTS
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="site-footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <h2>
+                    Let's build something
+                    <span>intelligent.</span>
+                </h2>
+
+                <p>
+                    Turning ideas, data and technology into useful
+                    digital experiences.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Explore</h3>
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="skills.html">Skills</a>
+                <a href="experience.html">Experience</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Connect</h3>
+
+                <a href="mailto:bhaskarkumar7673@gmail.com">Email</a>
+                <a href="https://github.com/Bhaskarkumar123" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/bhaskar-kumar-37b257291" target="_blank">LinkedIn</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- BIG CTA -->
+
+        <div class="footer-cta">
+
+            <p>HAVE AN IDEA?</p>
+
+            <a href="mailto:bhaskarkumar7673@gmail.com">
+                LET'S TALK
+                <span>↗</span>
+            </a>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Bhaskar Kumar.
+                <span>Built with curiosity & code.</span>
+            </p>
+
+            <a href="#" class="back-top">
+                Back to top <span>↑</span>
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Background -->
+    <script src="js/background.js"></script>
+
+    <!-- Skills Animation -->
+    <script src="js/skills.js"></script>
+
+</body>
+</html>

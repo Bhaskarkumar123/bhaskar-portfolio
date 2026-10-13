@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bhaskar Kumar | Portfolio</title>
+
+    <link rel="stylesheet" href="css/global.css">
+</head>
+
+<body>
+
+
+    <!-- AIRPLANE SVG DEFINITION -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <defs>
+
+            <symbol id="pl" viewBox="0 0 200 120">
+
+                <path
+                    d="M120 52 L80 6 L98 6 L156 52Z"
+                    style="fill:var(--v)"
+                />
+
+                <path
+                    d="M120 68 L80 114 L98 114 L156 68Z"
+                    style="fill:var(--v)"
+                />
+
+                <path
+                    d="M34 53 L12 30 L24 30 L52 53Z"
+                    style="fill:var(--v)"
+                />
+
+                <path
+                    d="M34 67 L12 90 L24 90 L52 67Z"
+                    style="fill:var(--v)"
+                />
+
+                <path
+                    d="M196 60 C186 51 150 49 100 49 L30 52 L10 58 L10 62 L30 68 L100 71 C150 71 186 69 196 60Z"
+                    style="fill:var(--fg)"
+                />
+
+                <ellipse
+                    cx="168"
+                    cy="60"
+                    rx="14"
+                    ry="4.5"
+                    style="fill:var(--c)"
+                />
+
+                <rect
+                    x="100"
+                    y="22"
+                    width="18"
+                    height="7"
+                    rx="3"
+                    style="fill:var(--p)"
+                />
+
+                <rect
+                    x="100"
+                    y="91"
+                    width="18"
+                    height="7"
+                    rx="3"
+                    style="fill:var(--p)"
+                />
+
+            </symbol>
+
+        </defs>
+    </svg>
+    
+        <!-- AIRPLANE -->
+    <div class="flyer" aria-hidden="true">
+
+        <div class="fin">
+
+            <div class="ban">
+                <span>Bhaskar portfolio</span>
+            </div>
+
+            <div class="rope"></div>
+
+            <div class="pw">
+
+                <div class="plane">
+
+                    <svg class="ly"
+                         viewBox="0 0 200 120"
+                         style="transform:translateZ(-12px);filter:brightness(.4)">
+                        <use href="#pl" width="200" height="120"></use>
+                    </svg>
+
+                    <svg class="ly"
+                         viewBox="0 0 200 120"
+                         style="transform:translateZ(-9px);filter:brightness(.5)">
+                        <use href="#pl" width="200" height="120"></use>
+                    </svg>
+
+                    <svg class="ly"
+                         viewBox="0 0 200 120"
+                         style="transform:translateZ(-6px);filter:brightness(.6)">
+                        <use href="#pl" width="200" height="120"></use>
+                    </svg>
+
+                    <svg class="ly"
+                         viewBox="0 0 200 120"
+                         style="transform:translateZ(-3px);filter:brightness(.8)">
+                        <use href="#pl" width="200" height="120"></use>
+                    </svg>
+
+                    <svg class="ly"
+                         viewBox="0 0 200 120">
+                        <use href="#pl" width="200" height="120"></use>
+                    </svg>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Animated Background -->
+    <canvas id="bg"></canvas>
+    <div class="mouse-glow"></div>
+
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">BK</a>
+
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="experience.html">Experience</a>
+        </div>
+
+       <!---- <button class="theme-btn" id="themeToggle">☼</button> --->
+
+    </nav>
+
+
+    <!-- Hero Section -->
+    <main class="hero">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                Welcome to my portfolio
+            </p>
+
+            <h1>
+                 I`m BHASKAR
+                <span>KUMAR</span>
+            </h1>
+
+            <p class="hero-description">
+                Building intelligent, data-driven digital experiences
+                through AI, Machine Learning and modern technology.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="primary-btn">
+                    View My Work
+                </a>
+
+                <a href="about.html" class="secondary-btn">
+                    Explore Me
+                </a>
+            </div>
+
+        </div>
+
+
+        <!-- 3D Visual -->
+        <div class="hero-visual">
+
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+
+            <div class="cube">
+
+                <div class="face front"></div>
+                <div class="face back"></div>
+                <div class="face right"></div>
+                <div class="face left"></div>
+                <div class="face top"></div>
+                <div class="face bottom"></div>
+
+                <div class="cube-core"></div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- Projects Preview -->
+    <section class="projects-preview" id="projects">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                SELECTED WORK
+            </p>
+
+            <h2>
+                WORK THAT
+                <span>DOES MORE</span>
+            </h2>
+
+            <p>
+                Real-world projects where data, AI and software
+                come together to solve practical problems.
+            </p>
+
+        </div>
+
+
+        <div class="project-grid">
+
+            <article class="project-card">
+
+                <span class="project-number">01</span>
+
+                <h3>Netflix Rating Prediction</h3>
+
+                <p>
+                    Machine Learning model for predicting
+                    content ratings using data analysis and
+                    predictive modelling.
+                </p>
+
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>ML</span>
+                    <span>Scikit-learn</span>
+                </div>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <span class="project-number">02</span>
+
+                <h3>Smart Farmer Assistant</h3>
+
+                <p>
+                    An intelligent farming assistant designed
+                    to provide useful data-driven tools for
+                    smarter agricultural decisions.
+                </p>
+
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>Flask</span>
+                    <span>AI</span>
+                </div>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <span class="project-number">03</span>
+
+                <h3>Enterprise Knowledge Assistant</h3>
+
+                <p>
+                    A futuristic knowledge interface designed
+                    around intelligent information retrieval
+                    and AI-assisted interaction.
+                </p>
+
+                <div class="project-tags">
+                    <span>AI</span>
+                    <span>RAG</span>
+                    <span>UI/UX</span>
+                </div>
+
+            </article>
+
+        </div>
+
+        <!-- =========================
+             ABOUT + SKILLS
+        ========================= -->
+        <!-- About & Skills Heading -->
+        <div class="section-heading about-heading">
+
+            <p class="section-label">
+                BEYOND THE PROJECTS
+            </p>
+
+            <h2>
+                MORE THAN
+                <span>CODE</span>
+            </h2>
+
+            <p>
+                A closer look at the ideas, skills and technologies
+                behind the work I build.
+            </p>
+
+        </div>
+
+        <section id="about">
+            <div class="about">
+
+                <div class="panel">
+                    <h2>About Me</h2>
+
+                    <p class="muted">
+                        B.Tech CSE student focused on Data Science,
+                        Machine Learning, AI and practical software development.
+                        I enjoy turning ideas and datasets into useful products.
+                    </p>
+                </div>
+
+                <div id="skills" class="panel">
+                    <h2>Skills & Technologies</h2>
+
+                    <div class="skill">
+                        <div class="skill-top">
+                            <span>Data Science</span>
+                            <span class="muted">
+                                Python · SQL · Pandas
+                            </span>
+                        </div>
+
+                        <div class="bar">
+                            <i style="width:90%"></i>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-top">
+                            <span>Machine Learning</span>
+                            <span class="muted">
+                                Scikit-learn · TensorFlow
+                            </span>
+                        </div>
+
+                        <div class="bar">
+                            <i style="width:84%"></i>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-top">
+                            <span>Development</span>
+                            <span class="muted">
+                                React · Flask · MySQL
+                            </span>
+                        </div>
+
+                        <div class="bar">
+                            <i style="width:80%"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- =========================
+            WAHT I WORK WITH
+        ========================= -->
+
+        <section class="work-with">
+
+            <div class="work-with-heading">
+
+                <p class="section-label">
+                    TECHNOLOGIES
+                </p>
+
+                <h2>
+                    WHAT I
+                    <span>WORK WITH</span>
+                </h2>
+
+                <p class="work-with-description">
+                    The tools, technologies and frameworks I use
+                    to turn ideas into intelligent digital experiences.
+                </p>
+
+            </div>
+
+
+            <!-- TECHNOLOGY PILLS -->
+            <div class="tech-list">
+
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">SQL</span>
+                <span class="tech-pill">Pandas</span>
+                <span class="tech-pill">NumPy</span>
+
+                <span class="tech-pill">Scikit-learn</span>
+                <span class="tech-pill">TensorFlow</span>
+                <span class="tech-pill">Power BI</span>
+
+                <span class="tech-pill">Flask</span>
+                <span class="tech-pill">React</span>
+                <span class="tech-pill">JavaScript</span>
+
+                <span class="tech-pill">MySQL</span>
+                <span class="tech-pill">Git</span>
+
+            </div>
+
+        </section>
+       
+
+
+        <!-- =========================
+            CONTACT
+        ========================= -->
+
+        <section id="contact" class="cta">
+
+            <div class="cta-content">
+
+                <p class="section-label">
+                    LET'S CONNECT
+                </p>
+
+                <h2>
+                    Let's build something
+                    <span>intelligent</span>
+                </h2>
+
+                <p class="cta-text">
+                    Have an idea, project or opportunity?
+                    Let's turn it into something meaningful.
+                </p>
+
+                <div class="row">
+
+                    <a
+                        class="btn primary"
+                        href="mailto:bhaskarkumar7673@gmail.com"
+                    >
+                        Email Me →
+                    </a>
+
+                    <a
+                        class="btn"
+                        href="https://github.com/Bhaskarkumar123"
+                    >
+                        GitHub
+                    </a>
+
+                    <a
+                        class="btn"
+                        href="https://www.linkedin.com/in/bhaskar-kumar-37b257291"
+                    >
+                        LinkedIn
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="cta-image">
+
+                <div class="image-glow"></div>
+
+                <img
+                    src="images/contact.jpeg"
+                    alt="Bhaskar Kumar"
+                >
+
+            </div>
+
+        </section>
+    </section>
+
+
+<!-- ========================================
+     FOOTER
+======================================== -->
+
+<footer class="site-footer">
+
+    <div class="footer-glow"></div>
+
+    <div class="footer-top">
+
+        <!-- LEFT -->
+        <div class="footer-intro">
+
+            <p class="footer-label">
+                LET'S BUILD SOMETHING
+            </p>
+
+            <h2>
+                Bhaskar
+                <span> Kumar</span>
+            </h2>
+
+            <p class="footer-description">
+                Data, AI and software development —
+                turning ideas into useful digital experiences.
+            </p>
+
+            <div class="footer-status">
+                <span class="status-dot"></span>
+                Open to opportunities
+            </div>
+
+        </div>
+
+
+        <!-- EXPLORE -->
+        <div class="footer-column">
+
+            <h3>Explore</h3>
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="experience.html">Experience</a>
+
+        </div>
+
+
+        <!-- CONNECT -->
+        <div class="footer-column">
+
+            <h3>Connect</h3>
+
+            <a href="mailto:bhaskarkumar7673@gmail.com">
+                Email
+            </a>
+
+            <a href="https://github.com/Bhaskarkumar123" target="_blank">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/bhaskar-kumar-37b257291" target="_blank">
+                LinkedIn
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- BIG CTA -->
+
+    <div class="footer-cta">
+
+        <p>HAVE AN IDEA?</p>
+
+        <a href="mailto:bhaskarkumar7673@gmail.com">
+            LET'S TALK
+            <span>↗</span>
+        </a>
+
+    </div>
+
+
+    <!-- BOTTOM -->
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Bhaskar Kumar.
+            <span>Built with curiosity & code.</span>
+        </p>
+
+        <a href="#" class="back-top">
+            Back to top
+            <span>↑</span>
+        </a>
+
+    </div>
+
+</footer>
+    <script src="js/background.js"></script>
+
+</body>
+</html>

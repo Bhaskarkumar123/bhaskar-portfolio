@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Farmer Assistant | Bhaskar Kumar</title>
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/case-study.css">
+</head>
+
+<body>
+
+
+    <!-- Airplane SVG Definition -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <defs>
+            <symbol id="pl" viewBox="0 0 200 120">
+
+                <path d="M120 52 L80 6 L98 6 L156 52Z"
+                      style="fill:var(--v)"/>
+
+                <path d="M120 68 L80 114 L98 114 L156 68Z"
+                      style="fill:var(--v)"/>
+
+                <path d="M34 53 L12 30 L24 30 L52 53Z"
+                      style="fill:var(--v)"/>
+
+                <path d="M34 67 L12 90 L24 90 L52 67Z"
+                      style="fill:var(--v)"/>
+
+                <path d="M196 60
+                         C186 51 150 49 100 49
+                         L30 52 L10 58
+                         L10 62 L30 68
+                         L100 71
+                         C150 71 186 69 196 60Z"
+                      style="fill:var(--fg)"/>
+
+                <ellipse cx="168" cy="60" rx="14" ry="4.5"
+                         style="fill:var(--c)"/>
+
+                <rect x="100" y="22" width="18" height="7" rx="3"
+                      style="fill:var(--p)"/>
+
+                <rect x="100" y="91" width="18" height="7" rx="3"
+                      style="fill:var(--p)"/>
+
+            </symbol>
+        </defs>
+    </svg>
+
+        <!-- Flying Airplane -->
+    <div class="flyer" aria-hidden="true">
+
+        <div class="fin">
+
+            <div class="ban">
+                <span>Bhaskar portfolio</span>
+            </div>
+
+            <div class="rope"></div>
+
+            <div class="pw">
+
+                <div class="plane">
+
+                    <svg class="ly" viewBox="0 0 200 120"
+                         style="transform:translateZ(-12px);filter:brightness(.4)">
+                        <use href="#pl" width="200" height="120"></use>
+                    </svg>
+
+                    <svg class="ly" viewBox="0 0 200 120"
+                         style="transform:translateZ(-9px);filter:brightness(.5)">
+                        <use href="#pl" width="200" height="120"></use>
+                    </svg>
+
+                    <svg class="ly" viewBox="0 0 200 120"
+                         style="transform:translateZ(-6px);filter:brightness(.6)">
+                        <use href="#pl" width="200" height="120"></use>
+                    </svg>
+
+                    <svg class="ly" viewBox="0 0 200 120"
+                         style="transform:translateZ(-3px);filter:brightness(.8)">
+                        <use href="#pl" width="200" height="120"></use>
+                    </svg>
+
+                    <svg class="ly" viewBox="0 0 200 120">
+                        <use href="#pl" width="200" height="120"></use>
+                    </svg>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Background -->
+    <canvas id="bg"></canvas>
+    <div class="mouse-glow"></div>
+
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <a href="../index.html" class="logo">BK</a>
+
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../projects.html">Projects</a>
+            <a href="../skills.html">Skills</a>
+            <a href="../experience.html">Experience</a>
+         <!----   <button class="theme-toggle">☼</button> --->
+        </div>
+
+    </nav>
+
+
+    <main class="case-study-page">
+        
+        <div class="case-progress">
+
+            <span class="current">01</span>
+
+            <span class="line"></span>
+
+            <span>03</span>
+
+        </div>
+
+        <a href="../projects.html" class="case-back">
+            ← Back to Projects
+        </a>
+
+
+        <!-- Hero -->
+        <section class="case-hero">
+
+            <p class="case-label">CASE STUDY · 01</p>
+
+            <h1>
+                SMART FARMER
+                <span>ASSISTANT</span>
+            </h1>
+
+            <p>
+                A practical project focused on bringing useful
+                data-driven features and weather information together
+                in one farmer-oriented web application.
+            </p>
+
+        </section>
+
+
+        <!-- Project Image -->
+        <div class="case-image">
+
+            <img
+                src="../images/dashboard.png"
+                alt="Smart Farmer Assistant"
+            >
+
+        </div>
+
+
+        <!-- Project Information -->
+        <section class="case-info">
+
+            <div class="case-section">
+
+                <h2>The Idea</h2>
+
+                <p>
+                    Smart Farmer Assistant was created to explore how
+                    software, data and useful information can be brought
+                    together to support practical farming needs.
+                </p>
+
+            </div>
+
+
+            <div class="case-section">
+
+                <h2>My Role</h2>
+
+                <p>
+                    I worked on the application structure, web interface,
+                    backend integration and database-connected features.
+                </p>
+
+            </div>
+
+        </section>
+
+           <!-- ========================================
+               CORE MODULES
+            ======================================== -->
+
+        <section class="modules-section">
+
+            <div class="modules-heading">
+                <p class="case-label">PROJECT FEATURES</p>
+
+                <h2>
+                    TWELVE MODULES.
+                    <span>ONE FARMING ASSISTANT</span>
+                </h2>
+
+                <p>
+                    The Smart Farmer Assistant brings multiple useful
+                    farming features together into one connected platform.
+                </p>
+            </div>
+
+
+            <div class="modules-grid">
+
+                <!-- Module 01 -->
+                <div class="module-card">
+
+                    <span class="module-number">01</span>
+
+                    <div class="module-icon">👨‍🌾</div>
+
+                    <h3>Farmer Profiles</h3>
+
+                    <p>
+                        A dedicated profile area for farmers to manage
+                        their information and access personalized features.
+                    </p>
+
+                </div>
+
+
+                <!-- Module 02 -->
+                <div class="module-card">
+
+                    <span class="module-number">02</span>
+
+                    <div class="module-icon">🌿</div>
+
+                    <h3>Disease Detection</h3>
+
+                    <p>
+                        A disease detection module designed to help identify
+                        possible crop-related problems and provide useful
+                        information to farmers.
+                    </p>
+
+                </div>
+
+
+                <!-- Module 03 -->
+                <div class="module-card">
+
+                    <span class="module-number">03</span>
+
+                    <div class="module-icon">📈</div>
+
+                    <h3>Market Price</h3>
+
+                    <p>
+                        Helps farmers access market price information so
+                        they can better understand current crop pricing.
+                    </p>
+
+                </div>
+
+
+                <!-- Module 04 -->
+                <div class="module-card">
+
+                    <span class="module-number">04</span>
+
+                    <div class="module-icon">📦</div>
+
+                    <h3>Inventory</h3>
+
+                    <p>
+                        A simple inventory area for keeping track of
+                        farming-related items and available resources.
+                    </p>
+
+                </div>
+
+
+                <!-- Module 05 -->
+                <div class="module-card">
+
+                    <span class="module-number">05</span>
+
+                    <div class="module-icon">💬</div>
+
+                    <h3>AI Chatbot</h3>
+
+                    <p>
+                        An interactive chatbot interface that gives users
+                        a convenient way to ask questions and explore
+                        farming-related information.
+                    </p>
+
+                </div>
+
+
+                <!-- Module 06 -->
+                <div class="module-card">
+
+                    <span class="module-number">06</span>
+
+                    <div class="module-icon">📖</div>
+
+                    <h3>User Guide</h3>
+
+                    <p>
+                        A guided section that helps users understand the
+                        platform and learn how to use its different features.
+                    </p>
+
+                </div>
+
+
+                <!-- Module 07 -->
+                <div class="module-card">
+
+                    <span class="module-number">07</span>
+
+                    <div class="module-icon">🌦️</div>
+
+                    <h3>Weather & Insights</h3>
+
+                    <p>
+                        Weather information and useful farming insights
+                        designed to help users make more informed decisions.
+                    </p>
+
+                </div>
+
+                <!-- Module 08 -->
+                <div class="module-card">
+
+                    <span class="module-number">08</span>
+
+                    <div class="module-icon">📅</div>
+
+                    <h3>Smart Farming Calendar</h3>
+
+                    <p>
+                        A smart calendar that tells farmers the right time to sow,
+                        water and harvest, based on weather and crop data
+                    </p>
+
+                </div>
+
+                <!-- Module 09 -->
+                <div class="module-card">
+
+                    <span class="module-number">09</span>
+
+                    <div class="module-icon">🌱</div>
+
+                    <h3>AI Crop Recommendation</h3>
+
+                    <p>
+                        An AI tool that suggests the best crop to grow 
+                        based on soil, weather and rainfall data.
+                    </p>
+
+                </div>
+
+                <!-- Module 10 -->
+                <div class="module-card">
+
+                    <span class="module-number">10</span>
+
+                    <div class="module-icon">📊</div>
+
+                    <h3>Soil Health Analysis</h3>
+
+                    <p>
+                        A tool that checks soil health from nutrient,
+                        pH and moisture data, and suggests how to improve it.
+                    </p>
+
+                </div>
+
+                <!-- Module 11 -->
+                <div class="module-card">
+
+                    <span class="module-number">11</span>
+
+                    <div class="module-icon">🏛️</div>
+
+                    <h3>Government Scheme</h3>
+
+                    <p>
+                        A tool that matches people with government schemes
+                        they are eligible for and shows how to apply
+                    </p>
+
+                </div>
+
+                <!-- Module 12 -->
+                <div class="module-card">
+
+                    <span class="module-number">12</span>
+
+                    <div class="module-icon">🔍</div>
+
+                    <h3>Nearby Agriculture Center</h3>
+
+                    <p>
+                        A map-based tool that helps farmers find 
+                        nearby agriculture centers, shops and labs 
+                        with directions.
+                    </p>
+
+                </div>
+
+                
+
+            </div>
+
+        </section>
+
+
+        <!-- Technologies -->
+        <section class="case-content">
+
+            <h2>Technologies</h2>
+
+            <p>
+                The project combines web development, backend programming,
+                database connectivity and weather data integration.
+            </p>
+
+            <div class="case-tech">
+                <span>Python</span>
+                <span>Flask</span>
+                <span>MySQL</span>
+                <span>OpenCV</span>
+                <span>ML</span>
+                <span>Deep Learning</span>
+                <span>OpenWeather API</span>
+            </div>
+
+        </section>
+
+         <!-- Direct go next project -->
+        <section class="project-navigation">
+
+            <a
+                href="netflix-prediction.html"
+                class="project-nav-card next"
+            >
+                <span class="project-nav-label">
+                    NEXT PROJECT
+                </span>
+
+                <span class="project-nav-title">
+                    Customer Churn Prediction
+                </span>
+
+                <span class="project-nav-arrow">
+                    →
+                </span>
+            </a>
+
+        </section>
+
+
+        <!-- CTA -->
+        <section class="case-cta">
+
+            <h2>
+                WANT TO SEE
+                <span>MORE?</span>
+            </h2>
+
+            <a href="../projects.html" class="btn primary">
+                Explore More Projects ↗
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <script src="../js/background.js"></script>
+    <script src="../js/case-study.js"></script>
+
+</body>
+
+</html>
